@@ -6,15 +6,15 @@ const con = mysql.createConnection({
     host     : '127.0.0.1',
     /*port     : '3306',*/
     user     : 'root',
-    password : '123456',
+    password : 'Your Mysql Password',
     database : 'in_ex_accounting'
 });
 
 const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "prayut15139@gmail.com",
-      pass: "@Tum1212312121"
+      user: "Your Email Username",
+      pass: "Your Email Password"
     },
     tls: {
         rejectUnauthorized: false
@@ -67,7 +67,7 @@ class database {
                     results[0].password = cryptoPass + mykey.final('utf8');
 
                     var mailOptions = {
-                        from: "IN-EX Accounting <prayut15139@gmail.com>",
+                        from: "IN-EX Accounting <Your Email Username>",
                         to: email,
                         subject: "IN-EX Accounting Forgot Password",
                         html: `<body><p>YOUR PASSWORD : </p><b>${results[0].password}</b></body>`
@@ -119,7 +119,7 @@ class database {
                 await con.query(sql + values);
 
                 var mailOptions = {
-                    from: "IN-EX Accounting <prayut15139@gmail.com>",
+                    from: "IN-EX Accounting <Your Email Username>",
                     to: account.email,
                     subject: "IN-EX Accounting Verify Email",
                     html: `<body><b>Click this <a href='http://localhost:3001/verifyEmail/${emailHash}'>link<a> for verify.</b></body>`
