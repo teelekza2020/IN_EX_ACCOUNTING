@@ -18,3 +18,9 @@ database : MySQL
 
 วิธีเริ่มรัน
 ใช้ npm start ทั้ง frontend  และ backend
+
+แก้ไข Code ก่อนรัน
+เข้าไปไฟล์ database.js ในโฟลเดอร์ backend/database/
+บรรทัดที่ 9 ในส่วนของ Your MySQL Password เป็น password ที่เชื่อมต่อกับฐานข้อมูลของ bitnami
+บรรทัดที่ 16, 17 ในส่วนของ Your Email Username, You Email Password เป็น username, password ของ gmail admin ที่ใช้สำหรับส่งข้อมูลให้กับทุกๆ user
+บรรทัดที่ 70, 122 ในส่วนของ Your Email Username เป็น username ของ gmail admin ที่ใช้สำหรับส่งข้อมูลให้กับทุกๆ user
