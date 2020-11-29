@@ -1,0 +1,215 @@
+.expense_list * {
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+}
+.expense_list {
+    position: relative;
+    background: #F5F5F5;
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.expense_list-form {
+    position: relative;
+    width: 1500px;
+    height: 820px;
+    max-height: 820px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    box-shadow: 0vh 0.4vh 0.5vh #818181;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.expense_list-form::-webkit-scrollbar {
+    width: 25px;
+    background: #818181;
+    border-radius: 0 25px 25px 0;
+}
+.expense_list-form::-webkit-scrollbar-thumb {
+    background: #9C9C9C;
+    border-radius: 0 25px 25px 0;
+}
+.expense_list-form-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 25px;
+}
+.expense_list-form-date-h1 {
+    margin-right: 10px;
+    cursor: context-menu;
+    color: #303030;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.expense_list-form-lists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.expense_list-form-lists-list {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0;
+}
+.expense_list-form-lists-list:last-child {
+    border-left: 2px solid #9C9C9C;
+}
+.expense_list-form-lists-list-item {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: 5px 0;
+}
+.expense_list-form-lists-list-item-labelbox {
+    position: relative;
+    width: 170px;
+    height: 60px;
+    background: #D9D9D9;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.expense_list-form-lists-list-item-labelbox-label {
+    margin: 0 10px 2px 10px;
+    width: 150px;
+    border-bottom: 2px solid #9C9C9C;
+}
+.expense_list-form-lists-list-item-labelbox-label h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    color: #9C9C9C;
+}
+.expense_list-form-lists-list-item-labelbox-label p {
+    background: transparent;
+    margin: 0 0 0 10px;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #9C9C9C;
+}
+.expense_list-form-lists-list-item-textbox {
+    position: relative;
+    margin-right: 5px;
+    width: 170px;
+    height: 60px;
+    background: #D9D9D9;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.expense_list-form-lists-list-item-textbox-field {
+    position: absolute;
+    left: 10px;
+    width: 145px;
+    border: 0;
+    border-bottom: 2px solid #9C9C9C;
+    outline: 0;
+    font-size: 18px;
+    color: #818181;
+    background: transparent;
+    transition: border-color 0.2s;
+    bottom: 6px;
+
+}
+.expense_list-form-lists-list-item-textbox-field::placeholder {
+    color: transparent;
+}
+.expense_list-form-lists-list-item-textbox-field:placeholder-shown ~ .expense_list-form-lists-list-item-textbox-label {
+    font-size: 18px;
+    cursor: text;
+    left: 15px;
+    top: 25px;
+}
+.expense_list-form-lists-list-item-textbox-label {
+    background: transparent;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    transition: 0.2s;
+    font-size: 13px;
+    color:#9C9C9C;
+}
+.expense_list-form-lists-list-item-textbox-field:focus {
+    font-weight: bold;
+    border-width: 3px;
+    border-color: #303030;
+}
+.expense_list-form-lists-list-item-textbox-field:focus ~ .expense_list-form-lists-list-item-textbox-label {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    transition: 0.2s;
+    font-size: 13px;
+    color:#303030;
+    font-weight:bold;
+}
+.expense_list-form-rowBTN {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 50px);
+    margin: 25px 0;
+}
+.expense_list-form-rowBTN-btnAdd {
+    width: 150px;
+    height: 60px;
+    background: #818181;
+    box-shadow: 0vh 0.4vh 0.5vh #818181;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.expense_list-form-rowBTN-btnAdd .icon{
+    margin-right: 10px;
+    color: #FFFFFF;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+.expense_list-form-rowBTN-btnSave {
+    width: 150px;
+    height: 60px;
+    background: #B3EBF0;
+    box-shadow: 0vh 0.4vh 0.5vh #818181;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.expense_list-form-rowBTN-btnAdd:hover {
+    box-shadow: 0vh 0.4vh 1.5vh #818181;
+}
+.expense_list-form-rowBTN-btnAdd:active {
+    background: #303030;
+}
+.expense_list-form-rowBTN-btnSave:hover {
+    box-shadow: 0vh 0.4vh 1.5vh #818181;
+}
+.expense_list-form-rowBTN-btnSave:active {
+    background: #8ED7DE;
+}

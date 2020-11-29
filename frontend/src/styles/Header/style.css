@@ -1,0 +1,114 @@
+.header {
+    z-index: 1;
+    position: fixed;
+    background: #8ED7DE;
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    height: 70px;
+    transition: 0.2s;
+    transition-property: width, margin-left;
+    display: flex;
+    align-items: center;
+}
+.header.active {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+}
+.header-toggle {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background: #F5F5F5;
+    border-radius: 100px;
+    box-shadow: 0vh 0.2vh 0.3vh #818181;
+
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-toggle:hover {
+    box-shadow: 0vh 0.4vh 1.5vh #818181;
+}
+.header-name {
+    margin: 0 10px 0 15px;
+    font-size: 18px;
+    color: #303030;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.header-icon {
+    width: 30px;
+    height: 30px;
+    color: #303030;
+    font-size: 25px;
+    line-height: 30px;
+}
+.header-profile {
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    color: #303030;
+    font-size: 40px;
+    line-height: 45px;
+}
+.header-profile:hover {
+    color: #FFFFFF;
+}
+.header-box {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    z-index: 0;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    background: #303030;
+    border-radius: 23px;
+    box-shadow: 0vh 0.2vh 0.3vh #818181;
+    transition: 0.4s;
+    transition-property: width, height, opacity;
+}
+.header-box ul {
+    position: fixed;
+    top: 45px;
+    right: 5px;
+    width: 180px;
+    height: 90px;
+}
+.header-box ul li {
+    margin: 0 10px 0 10px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+.header-box ul li:last-child {
+    border-top: 1px solid #FFFFFF;
+}
+.header-box ul li a {
+    padding: 5px 0 5px 0;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.header-box ul li a:hover {
+    background: #818181;
+    opacity: 0.7;
+}
+.header-box ul li a .icon {
+    margin: 0 10px 0 5px;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+.header-box ul li a span {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    color: #FFFFFF;
+}

@@ -1,0 +1,280 @@
+.transactions_income * {
+    color: #21BE9F;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    cursor: context-menu;
+    list-style: none;
+}
+.transactions_income h1 {
+    font-size: 28px;
+    cursor: pointer;
+}
+.transactions_income h2, 
+.transactions_income h3 {
+    padding-right: 5px;
+    font-size: 24px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.transactions_income p {
+    font-size: 18px;
+    cursor: pointer;
+}
+.transactions_income h1, 
+.transactions_income h3 {
+    letter-spacing: 1px;
+}
+.transactions_income ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.transactions_income {
+    position: relative;
+    background: #F5F5F5;
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.transactions_income-form {
+    position: relative;
+    width: 1500px;
+    height: 820px;
+    max-height: 820px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    box-shadow: 0vh 0.4vh 0.5vh #818181;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.transactions_income-form::-webkit-scrollbar {
+    width: 25px;
+    background: #818181;
+    border-radius: 0 25px 25px 0;
+}
+.transactions_income-form::-webkit-scrollbar-thumb {
+    background: #9C9C9C;
+    border-radius: 0 25px 25px 0;
+}
+.transactions_income-form-header,
+.transactions_income-form-header-inBTN,
+.transactions_income-form-header-exBTN {
+    width: calc(100% - 50px);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #9C9C9C;
+}
+.transactions_income-form-header-inBTN,
+.transactions_income-form-header-exBTN {
+    margin: 25px 10px;
+    height: 75px;
+    padding: 0 15px;
+    border-radius: 10px;
+    box-shadow: 0vh 0.4vh 0.5vh #818181;
+    cursor: pointer;
+    border-bottom: 2px solid #9C9C9C;
+}
+.transactions_income-form-header-inBTN:hover,
+.transactions_income-form-header-exBTN:hover {
+    box-shadow: 0vh 0.4vh 1.5vh #818181;
+}
+.transactions_income-form-header-inBTN {
+    background: #D1F2EB;
+}
+.transactions_income-form-header-inBTN:active {
+    background: #92E5D4;
+}
+.transactions_income-form-header-exBTN {
+    background: #FADBD8;
+}
+.transactions_income-form-header-exBTN:active {
+    background: #F6BAB4;
+}
+.transactions_income-form-header-exBTN h1,
+.transactions_income-form-header-exBTN span p {
+    color: #EA6253;
+    font-size: 18px;
+    font-weight: 600;
+}
+.transactions_income-form-header-inBTN h1,
+.transactions_income-form-header-exBTN h1 {
+    margin-right: 5px;
+    font-size: 28px;
+    font-weight: 600;
+}
+.transactions_income-form-header-inBTN span,
+.transactions_income-form-header-exBTN span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.transactions_income-form-lists-list-lists,
+.transactions_income-form-lists-list-lists-list-lists {
+    background: #EEFCF9;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-shadow: 0vh 0.4vh 0.5vh #818181;
+    border-radius: 0 0 10px 10px;
+    overflow-y: auto;
+}
+.transactions_income-form-lists-list,
+.transactions_income-form-lists-list-lists-list,
+.transactions_income-form-lists-list-lists-list-lists-list {
+    margin: 25px 15px 0 15px;
+    width: calc(100% - 70px);
+    height: auto;
+}
+.transactions_income-form-lists-list-lists-list:last-child,
+.transactions_income-form-lists-list-lists-list-lists-list:last-child {
+    margin-bottom: 25px;
+}
+.transactions_income-form-lists-list-item,
+.transactions_income-form-lists-list-lists-list-item {
+    background: #D1F2EB;
+    height: 80px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0vh 0.4vh 0.5vh #818181;
+    cursor: pointer;
+}
+.transactions_income-form-lists-list-item:hover,
+.transactions_income-form-lists-list-lists-list-item:hover {
+    box-shadow: 0vh 0.4vh 1.5vh #818181;
+}
+.transactions_income-form-lists-list-item:active,
+.transactions_income-form-lists-list-lists-list-item:active {
+    background: #92E5D4;
+}
+.transactions_income-form-lists-list-item-label,
+.transactions_income-form-lists-list-lists-list-item-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.transactions_income-form-lists-list-item-label span,
+.transactions_income-form-lists-list-lists-list-item-label span {
+    width: 45px;
+    height: 45px;
+    font-size: 45px;
+    text-align: center;
+    line-height: 45px;
+    margin-left: 10px;
+    cursor: pointer;
+    /*transform: rotate(-180deg);*/
+    transition: transform 0.2s;
+}
+.transactions_income-form-lists-list-item-label span,
+.transactions_income-form-lists-list-lists-list-item-label span {
+    cursor: pointer;
+}
+
+.transactions_income-form-lists-list.active .transactions_income-form-lists-list-item {
+    border-radius: 10px 10px 0 0;
+}
+.transactions_income-form-lists-list.active .transactions_income-form-lists-list-item-label span {
+    transform: rotate(-180deg);
+}
+.transactions_income-form-lists-list .transactions_income-form-lists-list-lists {
+    display: none;
+}
+.transactions_income-form-lists-list.active .transactions_income-form-lists-list-lists {
+    display: flex;
+}
+.transactions_income-form-lists-list-lists-list.active .transactions_income-form-lists-list-lists-list-item {
+    border-radius: 10px 10px 0 0;
+}
+.transactions_income-form-lists-list-lists-list.active .transactions_income-form-lists-list-lists-list-item-label span {
+    transform: rotate(-180deg);
+}
+.transactions_income-form-lists-list-lists-list .transactions_income-form-lists-list-lists-list-lists {
+    display: none;
+}
+.transactions_income-form-lists-list-lists-list.active .transactions_income-form-lists-list-lists-list-lists {
+    display: flex;
+}
+
+.transactions_income-form-lists-list-lists-list-lists-list div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.transactions_income-form-lists-list-lists-list-lists-list div span {
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 300;
+    width: 450px;
+    text-align: center;
+    border-left: 3px solid #21BE9F;
+}
+.transactions_income-form-lists-list-lists-list-lists-list div span:last-child {
+    border-right: 3px solid #21BE9F;
+}
+.transactions_income-form-lists-list-lists-list-lists-list .head {
+    border-bottom: 3px solid #21BE9F;
+    border-top: 3px solid #21BE9F;
+}
+.transactions_income-form-lists-list-lists-list-lists-list .head span {
+    font-weight: 600;
+}
+.transactions_income-form-lists-list-lists-list-lists-list div:last-child {
+    border-bottom: 3px solid #21BE9F;
+}
+.transactions_income-form-lists-list-lists-list-lists-list .total {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.transactions_income-form-lists-list-lists-list-lists-list .total span {
+    background: #D1F2EB;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 100px;
+}
+.transactions_income-form-paginations {
+    margin: 25px 15px;
+    width: calc(100% - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.transactions_income-form-paginations span {
+    background: #D1F2EB;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    border-radius: 10px;
+
+    font-size: 24px;
+    box-shadow: 0vh 0.4vh 0.5vh #818181;
+    cursor: pointer;
+}
+.transactions_income-form-paginations span:hover {
+    box-shadow: 0vh 0.4vh 1.5vh #818181;
+}
+.transactions_income-form-paginations span:active {
+    background: #92E5D4;
+}

@@ -1,0 +1,189 @@
+.income * {
+    font-family: "Poppins", sans-serif;
+}
+.income {
+    position: relative;
+    background: #F5F5F5;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.income-form {
+    position: relative;
+    width: 1300px;
+    height: 80px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    box-shadow: 0vh 0.4vh 0.5vh #818181;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 20px;
+}
+.income-form-h1 {
+    cursor: context-menu;
+    color: #303030;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.income-form-textbox {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    background: #D9D9D9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.income-form-textbox-field {
+    position: absolute;
+    left: 5px;
+    width: calc(100% - 15px);
+    border: 0;
+    border-bottom: 1px solid #9C9C9C;
+    outline: 0;
+    font-size: 16px;
+    color: #818181;
+    background: transparent;
+    transition: border-color 0.2s;
+    bottom: 5px;
+}
+.income-form-textbox-field::placeholder {
+    color: transparent;
+}
+.income-form-textbox-field:placeholder-shown ~ .income-form-textbox-label {
+    font-size: 16px;
+    cursor: text;
+    left: 7px;
+    top: 20px;
+}
+.income-form-textbox-label {
+    background: transparent;
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    transition: 0.2s;
+    font-size: 13px;
+    color:#9C9C9C;
+}
+.income-form-textbox-field:focus {
+    font-weight: bold;
+    border-width: 2px;
+    border-color: #303030;
+}
+.income-form-textbox-field:focus ~ .income-form-textbox-label {
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    transition: 0.2s;
+    font-size: 13px;
+    color:#303030;
+    font-weight:bold;
+}
+.income-form-btn {
+    width: 150px;
+    height: 60px;
+    background: #B3EBF0;
+    box-shadow: 0vh 0.4vh 0.5vh #818181;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.income-form-btn:hover {
+    box-shadow: 0vh 0.4vh 1.5vh #818181;
+}
+.income-form-btn:active {
+    background: #8ED7DE;
+}
+
+.income-form-selectbox {
+    position: relative;
+    display: flex;
+    width: 270px;
+}
+.income-form-selectbox-options {
+    position: absolute;
+    top: 49px;
+    background: #D9D9D9;
+    color: #818181;
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.2s;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0vh 0.4vh 0.5vh #818181;
+    overflow: hidden;
+
+    order: 1;
+}
+.income-form-selected {
+    background: #818181;
+    border-radius: 10px;
+    color: #FFFFFF;
+    position: relative;
+    box-shadow: 0vh 0.4vh 0.5vh #818181;
+
+    order: 0;
+}
+.income-form-selectbox .dropdown {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    top: 15px;
+    right: 24px;
+    transition: transform 0.2s;
+}
+.income-form-selectbox-options.active {
+    max-height: 150px;
+    opacity: 1;
+    overflow-y: scroll;
+}
+.income-form-selected.active {
+    border-radius: 10px 10px 0 0;
+}
+.income-form-selectbox .dropdown.active {
+    transform: rotate(-180deg);
+}
+.income-form-selectbox-options::-webkit-scrollbar {
+    width: 10px;
+    background: #303030;
+    border-radius: 0 0 10px 0;
+}
+.income-form-selectbox-options::-webkit-scrollbar-thumb {
+    background: #818181;
+    border-radius: 0 0 10px 0;
+}
+.income-form-selected,
+.income-form-selectbox-options-option {
+    width: 270px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+.income-form-selectbox-options-option {
+    border-bottom: 2px solid #9C9C9C;
+}
+.income-form-selectbox-options-option:last-child {
+    border-width: 0;
+}
+.income-form-selectbox-options-option:hover {
+    background: #9C9C9C;
+}
+.income-form-selectbox-options-option label {
+    color: #303030;
+    cursor: pointer;
+}
+.income-form-selectbox-options-option .radio {
+    display: none;
+}

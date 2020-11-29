@@ -1,0 +1,77 @@
+.register {
+    top: -1300px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #8ED7DE;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.register.active {
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+}
+.register-f {
+    position: relative;
+    width: 1100px;
+    height: 800px;
+    background: #F5F5F5;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+.register-f-imgbox {
+    width: 90%;
+    padding: 20px;
+}
+.register-f-imgbox img {
+    width: 600px;
+    height: 125px;
+}
+.register-f::-webkit-scrollbar {
+    width: 25px;
+    background: #818181;
+    border-radius: 0 25px 25px 0;
+}
+.register-f::-webkit-scrollbar-thumb {
+    background: #9C9C9C;
+    border-radius: 0 25px 25px 0;
+}
+.register-f-btn {
+    width: 750px;
+    height: 110px;
+    background: #B3EBF0;
+    margin: 5px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0vh 0.4vh 0.5vh #303030;
+    color: #FFFFFF;
+    font-size: 30px;
+    letter-spacing: 25px;
+    font-weight: bold;
+    padding: 45px 0;
+    border-width: 0;
+}
+.register-f-btn:hover {
+    width: 960px;
+}
+.register-f-btn:active {
+    background: #8ED7DE;
+    outline: none;
+}
+.register-f-btn:focus {
+    outline: none;
+}

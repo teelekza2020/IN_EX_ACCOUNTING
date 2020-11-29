@@ -1,0 +1,20 @@
+นางสาวฐปนรรฆ์ ด่านเสรี
+นายณภัทร คุณาพรธีรกุล
+
+frontend : ReactJS, CSS
+backend : NodeJS
+database : MySQL
+
+วิธีการติดตั้ง
+ส่วน frontend
+1. ลงไลบรารีทุกตัวโดยใช้คำสั่ง npm install
+ส่วน backend
+1. ลง node.js
+2. ลง bitnami wampstack
+3. เข้าไปที่ C:\Bitnami\wampstack-7.2.34-0\mysql\bin และเปิด CMD พิม mysql -u root -p เพื่อเข้าใช้งานฐานข้อมูล
+4. สร้างฐานข้อมูลชื่อว่า in_ex_accounting จากนั้น exit ออกมาแล้ว ใช้คำสั่ง
+ mysql -u root -p in_ex_accounting < (path ของ in_ex_accounting_backup.sql) เพื่อที่จะ import ไฟล์ in_ex_accounting_backup.sql เข้า MySQL
+5. จากนั้นลงทุกไลบรารีโดยใช้คำสั่ง npm install
+
+วิธีเริ่มรัน
+ใช้ npm start ทั้ง frontend  และ backend

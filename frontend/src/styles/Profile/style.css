@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+.profile * {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+button,
+button.active,
+button.focus {
+    border-width: 0;
+    outline: none;
+}
+.profile {
+    position: relative;
+    background: #F5F5F5;
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.profile-form {
+    position: relative;
+    width: 1000px;
+    height: 820px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    box-shadow: 0vh 0.4vh 0.5vh #818181;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profile-form .icon {
+    width: 245px;
+    height: 245px;
+    color: #303030;
+}
+.profile-form-textbox {
+    position: relative;
+    margin: 20px 0 0 0;
+    width: 780px;
+    height: 78px;
+    background: #303030;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.profile-form-textbox-label {
+    background: transparent;
+    margin: 0 0 0 10px;
+    width: 695px;
+    border-bottom: 1px solid #FFFFFF;
+}
+.profile-form-textbox-label h1 {
+    background: transparent;
+    font-size: 15px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+.profile-form-textbox-label p {
+    background: transparent;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.profile-form-textbox-edit {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    width: 56px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-form-textbox-edit .icon {
+    color: #303030;
+    width: 36px;
+    height: 36px;
+}
+
+.modal,
+.modal2,
+.modal3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: opacity, visibility;
+}
+.modal.toggle,
+.modal2.toggle,
+.modal3.toggle {
+    opacity: 1;
+    visibility: visible;
+    transition-property: opacity, visibility;
+}
+.modal-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(48, 48, 48, 0.9);
+    cursor: pointer;
+}
+.modal-form,
+.modal2-form,
+.modal3-form {
+    position: relative;
+    background: #F5F5F5;
+    width: 650px;
+    height: 300px;
+    border-radius: 25px;
+    box-shadow: 0vh 0.6vh 1vh #818181;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    transition-property: width, height;
+}
+.modal-form.toggle,
+.modal2-form.toggle,
+.modal3-form.toggle {
+    width: 780px;
+    height: 310px;
+    transition: 0.3s;
+    transition-property: width, height;
+}
+.modal2-form {
+    height: 520px;
+}
+.modal2-form.toggle {
+    height: 520px;
+}
+.modal3-form {
+    height: 410px;
+}
+.modal3-form.toggle {
+    height: 410px;
+}
+.modal-form-textbox {
+    margin-top: 20px;
+    position: relative;
+    width: 630px;
+    height: 90px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.modal-form-textbox-field {
+    position: absolute;
+    left: 15px;
+    width: 95%;
+    border: 0;
+    border-bottom: 2px solid #9C9C9C;
+    outline: 0;
+    font-size: 24px;
+    color: #818181;
+    background: transparent;
+    transition: border-color 0.2s;
+    bottom: 15px;
+
+}
+.modal-form-textbox-field::placeholder {
+    color: transparent;
+}
+.modal-form-textbox-field:placeholder-shown ~ .modal-form-textbox-label {
+    font-size: 24px;
+    cursor: text;
+    left: 20px;
+    top: 40px;
+}
+.modal-form-textbox-label {
+    background: transparent;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    transition: 0.2s;
+    font-size: 15px;
+    color:#9C9C9C;
+}
+.modal-form-textbox-field:focus {
+    font-weight: bold;
+    border-width: 3px;
+    border-color: #303030;
+}
+.modal-form-textbox-field:focus ~ .modal-form-textbox-label {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    transition: 0.2s;
+    font-size: 15px;
+    color:#303030;
+    font-weight:bold;
+}
+.modal-form-btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #B3EBF0;
+    border-radius: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    width: 630px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 10px;
+    box-shadow: 0vh 0.4vh 0.5vh #818181;
+    cursor: pointer;
+}
+.modal-form-btn:hover {
+    box-shadow: 0vh 0.4vh 1.5vh #818181;
+}
+.modal-form-btn:active {
+    background: #8ED7DE;
+}

@@ -1,0 +1,236 @@
+
+.dashboard * {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+}
+.dashboard h1 {
+    font-size: 28px;
+  }
+  .dashboard h2 {
+    font-size: 24px;
+  }
+  .dashboard h3 {
+    font-size: 22px;
+  }
+  .dashboard p {
+    font-size: 18px;
+  }
+  .dashboard span {
+      font-size: 16px;
+  }
+  .dashboard h1, h2, h3, p {
+    display: flex;
+    align-items: center;
+    color: #818181;
+  }
+  .dashboard {
+      position: relative;
+      background: #F5F5F5;
+      width: 100%;
+      padding-top: 20px;
+      display: flex;
+      justify-content: center;
+  }
+  .dashboard .form {
+      position: relative;
+      width: 1250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .dashboard .form .smallrow {
+    width: 100%;
+    height: 330px;
+    padding: 5px;
+    border-bottom: 2px solid #9C9C9C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .dashboard .form .smallrow .smallbox {
+    width: 550px;
+    height: 300px;
+    margin: 0 25px;
+    border-radius: 25px;
+    background: #FFFFFF;
+  }
+  .dashboard .form .smallrow .smallbox.graph {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .dashboard .form .smallrow .smallbox.graph div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+  .dashboard .form .smallrow .smallbox .smallbox-row {
+    width: 530px;
+    height: 80px;
+    margin: 0 10px;
+    margin-top: 10px;
+    border-radius: 25px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .dashboard .form .smallrow .smallbox .smallbox-row-row {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+  }
+  .dashboard .form .smallrow .smallbox .smallbox-row-col {
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .dashboard .form .smallrow .smallbox .smallbox-row-col div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #D1F2EB;
+    border-radius: 25px;
+    padding: 5px 10px;
+  }
+  .dashboard .form .smallrow .smallbox .smallbox-row-row span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .dashboard .form .smallrow .smallbox .smallbox-row-row span h1 {
+    color: #303030;
+  }
+  .dashboard .form .smallrow .smallbox .smallbox-row-row span h3 {
+    border-radius: 25px;
+    padding: 5px 10px;
+    background: #D9D9D9;
+  }
+  .dashboard .form .smallrow .smallbox .smallbox-row-row span div {
+    display: flex;
+    align-items: center;
+  }
+  .dashboard .form .smallrow .smallbox .smallbox-row-row span.icon {
+    background: #D1F2EB;
+    margin: 0 -10px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+  }
+  .dashboard .form .smallrow .smallbox .smallbox-row-row span.icon .fa-icon {
+    color: #21BE9F;
+    width: 30px;
+    height: 30px;
+  }
+  .dashboard .form .smallrow .smallbox .smallbox-row span {
+    margin: 0 20px;
+  }
+  .dashboard .form .smallrow .smallbox .smallbox-row span.row {
+    display: flex;
+  }
+  .dashboard .form .smallrow .smallbox .smallbox-row:first-child {
+    height: 100px;
+  }
+  .dashboard .form .smallrow .smallbox .smallbox-row:nth-child(2) {
+    background: #D1F2EB;
+  }
+  .dashboard .form .smallrow .smallbox .smallbox-row:nth-child(3) {
+    background: #FADBD8;
+  }
+  .dashboard .form .bigrow {
+    width: 100%;
+    height: 850px;
+    padding: 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .dashboard .form .bigrow .bigbox {
+    width: 800px;
+    height: 830px;
+    margin: 15px 25px;
+    border-radius: 25px;
+    background: #FFFFFF;
+  }
+  .dashboard .form .bigrow .bigbox-header {
+    height: calc(100% - 85%);
+    display: flex;
+    justify-content: space-between;
+  }
+  .dashboard .form .bigrow .bigbox-header div {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+  }
+  .dashboard .form .bigrow .bigbox-header div:last-child {
+    align-items: flex-end;
+  }
+  .dashboard .form .bigrow .bigbox-calendar {
+    margin-left: 15px;
+    width: 770px;
+    height: 690px;
+  }
+  .dashboard .form .bigrow .bigbox-calendar-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .dashboard .form .bigrow .bigbox-calendar-head span {
+    width: 110px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .dashboard .form .bigrow .bigbox-calendar-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    border-top: 3px solid #818181;
+  }
+  .dashboard .form .bigrow .bigbox-calendar-content:last-child {
+    border-bottom: 3px solid #818181;
+  }
+  .dashboard .form .bigrow .bigbox-calendar-content span {
+    position: relative;
+    width: 110px;
+    height: 96.4px;
+    padding: 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    border-left: 3px solid #818181;
+  }
+  .dashboard .form .bigrow .bigbox-calendar-content span div {
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    width: 95px;
+    height: 60px;
+    background: #D9D9D9;
+    border-radius: 5px;
+  }
+  .dashboard .form .bigrow .bigbox-calendar-content span div p {
+    font-size: 8px;
+    margin: 5px;
+  }
+  .dashboard .form .bigrow .bigbox-calendar-content span.notDate {
+    background: #C4C4C4;
+  }
+  .dashboard .form .bigrow .bigbox-calendar-content span:last-child {
+    border-right: 3px solid #818181;
+  }
+  

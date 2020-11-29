@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  position: fixed;
+  top: 70px;
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  height: calc(100% - 70px);
+  overflow-y: auto;
+  transition: 0.2s;
+  transition-property: width, margin-left;
+}
+.container.active {
+  margin-left: 60px;
+  width: calc(100% - 60px);
+}
